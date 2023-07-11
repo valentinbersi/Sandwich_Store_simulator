@@ -13,4 +13,4 @@ Finally it prints the result between dashes
 
 Some clarifications on how it works:
 - The C version doesn't validate if the user is typing a valid data type, like for example if the user types a char in a int type, there will be an error.
-- If the user chooses tuna, then it doesn't asks if he want's to get his sandwich heated. 
+- If the user chooses tuna, then it doesn't asks if he want's to get his sandwich heated.
