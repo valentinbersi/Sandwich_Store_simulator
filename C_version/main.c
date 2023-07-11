@@ -8,7 +8,7 @@
 #define CHICKEN 'C'
 #define NO_PROTEIN 'N'
 
-// Protein princes
+// Protein prices
 const int ROAST_BEEF_PRICE = 7;
 const int TUNA_PRICE = 9;
 const int CHICKEN_PRICE = 5;
