@@ -50,7 +50,7 @@ void introduction(){
     printf("Hi! Welcome to Upway S.A., we'll soon take your order.\n");
 }
 
-// Returns true if sandwich_size > MIN_SANDWICH_SIZE or sandwich_size < MAX_SANDWICH_SIZE
+// Returns true if sandwich_size >= MIN_SANDWICH_SIZE and sandwich_size <= MAX_SANDWICH_SIZE
 bool valid_sandwich_size(int sandwich_size){
     return ( ( sandwich_size >= MIN_SANDWICH_SIZE ) && ( sandwich_size <= MAX_SANDWICH_SIZE ) );
 }
