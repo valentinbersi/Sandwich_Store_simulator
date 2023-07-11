@@ -1,5 +1,5 @@
 # Sandwich_Store_simulator
-This is a task that was part of a subject in 1st year of university, it's a sandwich store simulator wich ask you some questions about how do you want your sandwich and then tells you the final price of it.
+This is a task that was part of a subject in 1st year of university, it's a sandwich restaurant simulator wich ask you some questions about how do you want your sandwich and then tells you the final price of it.
 
 It consists in 5 questions that would be ask to the user to then calculate the final price of the sandwich:
 - What size do you want your sandwich?
