@@ -18,7 +18,7 @@ MAX_SANDWICH_SIZE = 30
 
 # Bread types
 WHITE = 'W'
-WHOLEMEAL = 'H'
+BROWN = 'B'
 OATMEAL_AND_HONEY = 'O'
 CHEESE_AND_OREGANO = 'C'
 
@@ -59,20 +59,20 @@ def ask_sandwich_size():
         
     return int(sandwich_size)
         
-# Return true if bread_type is one of the bread types (WHITE, WHOLEMEAL, OATMEAL_AND_HONEY or CHEESE_AND_OREGANO)
+# Return True if bread_type is one of the bread types (WHITE, BROWN, OATMEAL_AND_HONEY or CHEESE_AND_OREGANO)
 def valid_bread_type(bread_type):
-    return ( ( not str(bread_type).isnumeric() ) and ( ( bread_type.upper() == WHITE ) or ( bread_type.upper() == WHOLEMEAL ) or ( bread_type.upper() == OATMEAL_AND_HONEY ) or ( bread_type.upper() == CHEESE_AND_OREGANO ) ) )
+    return ( ( not str(bread_type).isnumeric() ) and ( ( bread_type.upper() == WHITE ) or ( bread_type.upper() == BROWN ) or ( bread_type.upper() == OATMEAL_AND_HONEY ) or ( bread_type.upper() == CHEESE_AND_OREGANO ) ) )
 
-# Returns the bread_type with WHITE, WHOLEMEAL, OATMEAL_AND_HONEY or CHEESE_AND_OREGANO
+# Returns the bread_type with WHITE, BROWM, OATMEAL_AND_HONEY or CHEESE_AND_OREGANO
 def ask_bread_type():
-    bread_type = input(f"What type of bread do you want? White[{WHITE}], Wholemeal[{WHOLEMEAL}], Oatmeal and honey[{OATMEAL_AND_HONEY}] or Cheese and oregano[{CHEESE_AND_OREGANO}]: ")
+    bread_type = input(f"What type of bread do you want? White[{WHITE}], Brown[{BROWN}], Oatmeal and honey[{OATMEAL_AND_HONEY}] or Cheese and oregano[{CHEESE_AND_OREGANO}]: ")
     
     while not valid_bread_type(bread_type):
-        bread_type = input(f"No!, bread options are: White[{WHITE}], Wholemeal[{WHOLEMEAL}], Oatmeal and honey[{OATMEAL_AND_HONEY}] or Cheese and oregano[{CHEESE_AND_OREGANO}]. Please type again, What type of bread do you want?: ")
+        bread_type = input(f"No!, bread options are: White[{WHITE}], Browm[{BROWM}], Oatmeal and honey[{OATMEAL_AND_HONEY}] or Cheese and oregano[{CHEESE_AND_OREGANO}]. Please type again, What type of bread do you want?: ")
         
     return bread_type.upper()
 
-# Return true if cheese_type is one of the bread types (DAMBO, CHEDDAR, GRUYERE or NO_CHEESE)
+# Return True if cheese_type is one of the cheese types (DAMBO, CHEDDAR, GRUYERE or NO_CHEESE)
 def valid_cheese_type(cheese_type):
     return ( ( not str(cheese_type).isnumeric() ) and ( ( cheese_type.upper() == DAMBO ) or ( cheese_type.upper() == CHEDDAR ) or ( cheese_type.upper() == GRUYERE ) or ( cheese_type.upper() == NO_CHEESE ) ) )
 
@@ -113,7 +113,7 @@ def ask_heat_sandwich():
 
 # Returns the bread price
 def calculate_bread_price(bread_type):
-    if bread_type == WHITE or bread_type == WHOLEMEAL:
+    if bread_type == WHITE or bread_type == BROWN:
         bread_price = BASIC_BREAD_PRICE
     else:
         bread_price = SPECIAL_BREAD_PRICE
