@@ -119,7 +119,7 @@ bool valid_heat_sandwich(char heat_sandwich){
     return ( ( heat_sandwich == YES ) || ( heat_sandwich == NO ) );
 }
 
-// Loads hot_or_cold with YES or NO
+// Loads heat_sandwich with YES or NO
 void ask_heat_sandwich(char* heat_sandwich){
     printf("Do you want us to heat your sandwich? Yes[%c] or No[%c] (type your option in a capital letter please): ", YES, NO);
     scanf(" %c", heat_sandwich);
