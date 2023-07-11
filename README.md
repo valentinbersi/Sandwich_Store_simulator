@@ -7,6 +7,7 @@ It consists in 5 questions that would be ask to the user to then calculate the f
 - What cheese type do you want?
 - what protein type do you want?
 - Do you want us to heat your sandwich?
+
 Each question provides the user with the options avaiable for each sandwich component.
 Then after the questions it calculates the final price with this formula: (Bread price + Cheese price + Protein price) * (0,3 * size) = Final price
 Finally it prints the result between dashes
