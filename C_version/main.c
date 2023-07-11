@@ -21,7 +21,7 @@ const int MAX_SANDWICH_SIZE = 30;
 
 // Bread types
 const char WHITE = 'W';
-const char WHOLEMEAL = 'H';
+const char BROWN = 'B';
 const char OATMEAL_AND_HONEY = 'O';
 const char CHEESE_AND_OREGANO = 'C';
 
@@ -66,18 +66,18 @@ void ask_sandwich_size(int* sandwich_size){
     }
 }
 
-// Return true if bread_type is one of the bread types (WHITE, WHOLEMEAL, OATMEAL_AND_HONEY or CHEESE_AND_OREGANO)
+// Return true if bread_type is one of the bread types (WHITE, BROWN, OATMEAL_AND_HONEY or CHEESE_AND_OREGANO)
 bool valid_bread_type(char bread_type){
-    return ( ( bread_type == WHITE ) || ( bread_type == WHOLEMEAL ) || ( bread_type == OATMEAL_AND_HONEY ) || ( bread_type == CHEESE_AND_OREGANO ) );
+    return ( ( bread_type == WHITE ) || ( bread_type == BROWN ) || ( bread_type == OATMEAL_AND_HONEY ) || ( bread_type == CHEESE_AND_OREGANO ) );
 }
 
-// Loads bread_type with WHITE, WHOLEMEAL, OATMEAL_AND_HONEY or CHEESE_AND_OREGANO
+// Loads bread_type with WHITE, BROWN, OATMEAL_AND_HONEY or CHEESE_AND_OREGANO
 void ask_bread_type(char* bread_type){
-    printf("What type of bread do you want? White[%c], Wholemeal[%c], Oatmeal and honey[%c] or Cheese and oregano[%c] (type your option in a capital letter please): ", WHITE, WHOLEMEAL, OATMEAL_AND_HONEY, CHEESE_AND_OREGANO);
+    printf("What type of bread do you want? White[%c], Brown[%c], Oatmeal and honey[%c] or Cheese and oregano[%c] (type your option in a capital letter please): ", WHITE, BROWN, OATMEAL_AND_HONEY, CHEESE_AND_OREGANO);
     scanf(" %c", bread_type);
 
     while( !valid_bread_type(*bread_type) ){
-        printf("No!, bread options are: White[%c], Wholemeal[%c], Oatmeal and honey[%c] or Cheese and oregano[%c]. Please type again, What type of bread do you want? (type your option in a capital letter please): ", WHITE, WHOLEMEAL, OATMEAL_AND_HONEY, CHEESE_AND_OREGANO);
+        printf("No!, bread options are: White[%c], Brown[%c], Oatmeal and honey[%c] or Cheese and oregano[%c]. Please type again, What type of bread do you want? (type your option in a capital letter please): ", WHITE, BROWN, OATMEAL_AND_HONEY, CHEESE_AND_OREGANO);
         scanf(" %c", bread_type);
     }
 }
@@ -135,7 +135,7 @@ int calculate_bread_price(char bread_type){
 
     int bread_price = 0;
 
-    if( ( bread_type == WHITE ) || ( bread_type == WHOLEMEAL ) ){
+    if( ( bread_type == WHITE ) || ( bread_type == BROWM ) ){
         bread_price = BASIC_BREAD_PRICE;
     }
     else{
