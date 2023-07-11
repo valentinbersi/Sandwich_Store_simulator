@@ -115,7 +115,7 @@ void ask_protein_type(char* protein_type){
 }
 
 // Return true if heat_sandwich is YES or NO
-bool valid_hot_or_cold(char heat_sandwich){
+bool valid_heat_sandwich(char heat_sandwich){
     return ( ( heat_sandwich == YES ) || ( heat_sandwich == NO ) );
 }
 
@@ -124,7 +124,7 @@ void ask_heat_sandwich(char* heat_sandwich){
     printf("Do you want us to heat your sandwich? Yes[%c] or No[%c] (type your option in a capital letter please): ", YES, NO);
     scanf(" %c", heat_sandwich);
 
-    while( !valid_hot_or_cold(*heat_sandwich) ){
+    while( !valid_heat_sandwich(*heat_sandwich) ){
         printf("It's a yes or no question... Please type again, Do you want us to heat your sandwich? Yes[%c] or No[%c] (type your option in a capital letter please): ",YES, NO);
         scanf(" %c", heat_sandwich);
     }
