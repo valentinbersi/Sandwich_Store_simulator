@@ -16,3 +16,7 @@ Some clarifications on how it works:
 - The C version doesn't validate if the user is typing a valid data type, like for example if the user types a char in a int type, there will be an error. Also, it runs on the standard c99.
 - The python version runs on python 3
 - If the user chooses tuna, then it doesn't asks if he want's to get his sandwich heated.
+
+Compilation:
+- To compile this code on Linux open a terminal in the folder that contains the files and run the following command: gcc main.c -o game.out -std=c99 -Wall -Wconversion -Werror -lm
+- To run the python version open a terminar in the folder that contains the files and run the following command: phyton3 main.py
