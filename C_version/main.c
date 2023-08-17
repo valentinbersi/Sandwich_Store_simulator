@@ -135,7 +135,7 @@ int calculate_bread_price(char bread_type){
 
     int bread_price = 0;
 
-    if( ( bread_type == WHITE ) || ( bread_type == BROWM ) ){
+    if( ( bread_type == WHITE ) || ( bread_type == BROWN ) ){
         bread_price = BASIC_BREAD_PRICE;
     }
     else{
