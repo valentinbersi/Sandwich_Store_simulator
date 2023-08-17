@@ -18,5 +18,5 @@ Some clarifications on how it works:
 - If the user chooses tuna, then it doesn't asks if he want's to get his sandwich heated.
 
 Compilation:
-- To compile this code on Linux open a terminal in the folder that contains the files and run the following command: gcc main.c -o game.out -std=c99 -Wall -Wconversion -Werror -lm
+- To compile this code on Linux open a terminal in the folder that contains the files and run the following command: gcc main.c -o sandwich_restaurant_simulator.out -std=c99 -Wall -Wconversion -Werror -lm
 - To run the python version open a terminar in the folder that contains the files and run the following command: phyton3 main.py
